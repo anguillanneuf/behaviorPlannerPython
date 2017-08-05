@@ -1,3 +1,6 @@
+
+
+
 class Vehicle(object):
     L = 1
     preferred_buffer = 6  # impacts "keep lane" behavior.
@@ -44,7 +47,15 @@ class Vehicle(object):
           ]
         }
 
+        My understanding:
+
+        This is also the transition function. The pseudo-code given for this function
+        is in Lesson 4.10. Given the vehicle's current state, its possible successor states,
+        and the predictions of where other vehicles will be, we calculate the cost associated
+        with each possible successor state and determine which one is the best.
+
         """
+
         self.state = "KL"  # this is an example of how you change state.
 
     def configure(self, road_data):
